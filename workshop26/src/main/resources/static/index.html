@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="col mt-5">
+            <form action="/post/s3" method="POST" enctype="multipart/form-data">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Create Post</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Upload: </td>
+                            <td><input type="file" name="file" accept="image/*" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Comment: </td>
+                            <td><textarea name="comment" cols="30" rows="4"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Name: </td>
+                            <td><input type="text" name="poster" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">Upload</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
